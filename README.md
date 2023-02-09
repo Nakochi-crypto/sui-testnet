@@ -1,53 +1,55 @@
 # Sui Testnet
 
-## 前提条件
+[日本語](https://github.com/Nakochi-crypto/sui-testnet/blob/main/README.ja.md)
 
-- [Suiのハードウェア要件](https://docs.sui.io/devnet/build/fullnode#full-node-setup)に満たすサーバーを用意していること
-- [Contaboセットアップ手順](https://www.notion.so/nakochi/Contabo-96911858ca37464c8e5ee8549db9080f)を終わらせていること
+## Requirements
 
-## ダウンロード
+- [Sui hardware requirements](https://docs.sui.io/devnet/build/fullnode#full-node-setup)
+- [Docker Compose](https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script)
+
+## Download
 
 ```
 git clone https://github.com/Nakochi-crypto/sui-testnet.git
 ```
 
-## コマンド
+## Commands
 
-`cd sui-testnet` して `docker-compose.yml` のあるディレクトリに入ってから実行すること
+`cd sui-testnet` before execution
 
-### ビルド・更新
+### Build / Update
 
 ```
 docker compose build --no-cache
 ```
 
-### 起動
+### Run a fullnode
 
 ```
 docker compose up -d
 ```
 
-### ログの確認
+### View logs
 
 ```
 docker compose logs -f
 ```
 
-### 停止
+### Stop
 
 ```
 docker compose down
 ```
 
-### 停止（db wipeあり）
+### Stop (db swipe)
 
 ```
 docker compose down -v
 ```
 
-## 便利なサイト
+## Useful sites
 
-### 動作確認
+### Node checker
 
 - https://www.scale3labs.com/check/sui
 - https://node.sui.zvalid.com/
