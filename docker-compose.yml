@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  fullnode:
+    build: .
+    volumes:
+      - type: volume
+        source: suidb
+        target: /suidb
+    ports:
+      - "9184:9184"
+      - "9000:9000"
+      - "9001:9001"
+    restart: unless-stopped
+
+volumes:
+  suidb:
