@@ -2,7 +2,10 @@ version: "3.9"
 
 services:
   fullnode:
-    build: .
+    build:
+      context: .
+      args:
+        branch_or_tag: testnet
     volumes:
       - type: volume
         source: suidb

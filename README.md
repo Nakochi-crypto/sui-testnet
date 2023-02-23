@@ -13,6 +13,17 @@
 git clone https://github.com/Nakochi-crypto/sui-testnet.git
 ```
 
+## For devnet
+
+Edit `Dockerfile` like this:
+
+```yaml
+build:
+  context: .
+  args:
+    branch_or_tag: devnet-0.27.0
+```
+
 ## Commands
 
 `cd sui-testnet` before execution
