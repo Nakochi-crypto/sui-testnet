@@ -15,7 +15,7 @@ git clone https://github.com/Nakochi-crypto/sui-testnet.git
 
 ## For devnet
 
-Edit `Dockerfile` like this:
+Edit `docker-compose.yml` like this:
 
 ```yaml
 build:
